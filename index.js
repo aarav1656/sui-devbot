@@ -19,8 +19,8 @@ client.on("ready", () => {
 
 const commands = [
   new SlashCommandBuilder()
-    .setName("chatbot")
-    .setDescription("Chat with the bot")
+    .setName("scrolldevbot")
+    .setDescription("Chat with the Scroll Dev bot")
     .addStringOption((option) =>
       option
         .setName("prompt")
@@ -78,7 +78,7 @@ client.on("interactionCreate", async (interaction) => {
     // Send a message to the thread
     // thread.send(`Hello, ${user.globalName}`);
 
-    // Send a message to the thread using the flock-api.js file
+    // Send a message to the thread using the bot
     const response = await main(prompt);
     thread.send(response.answer);
 
