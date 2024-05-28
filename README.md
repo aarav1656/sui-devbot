@@ -1,4 +1,4 @@
-**sui-dev-rpg-bot**
+**SUI-RAG-discord-bot**
 =====================
 
 **Introduction**
@@ -17,17 +17,31 @@ The Sui Dev AI Bot provides real-time updates on project progress, allowing deve
 
 The bot uses AI-powered insights to analyze project data and provide valuable recommendations to developers, helping them optimize their workflow and improve productivity.
 
-### **Customizable Notifications**
-
-Developers can customize their notifications to receive updates on specific project milestones, ensuring they stay informed without being overwhelmed by unnecessary information.
-
-### **Discord Integration**
+### **Discord Integration with Customizable Notifications**
 
 The bot is fully integrated with Discord, allowing developers to access its features and functionality directly within their Discord channels.
+
+Developers can customize their notifications to receive updates on specific project milestones, ensuring they stay informed without being overwhelmed by unnecessary information.
 
 ### **Flock.io Integration**
 
 The bot is built on top of Flock.io, a powerful platform for team collaboration and project management. This integration enables seamless communication and coordination between team members.
+
+## What is Retrieval Augmented Generation
+RAG enhances the existing potent functionalities of LLMs for particular domains or an organization's internal knowledge repository, 
+without necessitating model retraining. This method offers a cost-efficient means of enhancing LLM output, ensuring its continued relevance, precision, 
+and utility across diverse settings. <br>
+
+LLMs are used to generate AI powered intelligent chatbots, computer vision, robotics and consumer devices, etc.
+Unfortunately, the nature of LLM technology introduces unpredictability in LLM responses as its not a state machine and it undergoes the following challenges:
+1. Hallucination - the phenomena where the LLM responds with false information or partially false information which is problem hard to resolve.
+2. Presenting out-of-date or generic information when the user expects a specific, current response.
+3. Generating responses from non-authoritative sources and finetuning or training an LLM for a domain specific conversation incurs additional costs.
+
+RAG brings in the following benefits over an LLM:
+1. With the help of RAG, LLMs can provide latest information to users by feeding in latest research, statistics, or news/social media feeds to the generative models. This can be 
+2. RAG is a cost efficient option and makes an LLM broadly accessible and usable.
+3. Both developers and users can not trust LLMs to present accurate information with source attribution increasing trust and confidence in generative AI solution.
 
 **How to Use**
 --------------
@@ -58,6 +72,15 @@ The bot utilizes the Flock.io API to integrate with Flock.io and access project 
 ### **AI Model**
 
 The bot's AI model is trained on a dataset of project management best practices and is continuously updated to improve its insights and recommendations.
+
+## Working of a Retrieval Augmented Generation
+Shown below is a sequence diagram with explanation by NVIDIA at a high level.
+
+- When users ask an LLM a question, the AI model sends the query to another model that converts it into a numeric format so machines can read it. The numeric version of the query is sometimes called an embedding or a vector. <br>
+- The embedding model then compares these numeric values to vectors in a machine-readable index of an available knowledge base. <br>
+- When it finds a match or multiple matches, it retrieves the related data, converts it to human-readable words and passes it back to the LLM. <br>
+- Finally, the LLM combines the retrieved words and its own response to the query into a final answer it presents to the user, potentially citing sources the embedding model found. <br>
+
 
 **Conclusion**
 ----------
