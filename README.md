@@ -1,17 +1,17 @@
-**Scroll Dev AI Bot**
+**sui-dev-rpg-bot**
 =====================
 
 **Introduction**
 ---------------
 
-The Scroll Dev AI Bot is a revolutionary project that combines the power of Flock.io and Discord to create a seamless and efficient collaboration experience for developers. This bot is designed to assist developers in their workflow, providing real-time updates and insights to help them stay on top of their projects.
+The Sui Dev AI Bot is a revolutionary project that combines the power of Flock.io and Discord to create a seamless and efficient collaboration experience for developers. This bot is designed to assist developers in their workflow, providing real-time updates and insights to help them stay on top of their projects.
 
 **Features**
 ------------
 
 ### **Real-Time Updates**
 
-The Scroll Dev AI Bot provides real-time updates on project progress, allowing developers to stay informed and focused on their tasks.
+The Sui Dev AI Bot provides real-time updates on project progress, allowing developers to stay informed and focused on their tasks.
 
 ### **Intelligent Insights**
 
@@ -34,7 +34,7 @@ The bot is built on top of Flock.io, a powerful platform for team collaboration 
 
 ### **Getting Started**
 
-To use the Scroll Dev AI Bot, simply invite it to your Discord server and configure it to your project's Flock.io workspace.
+To use the Sui Dev AI Bot, simply invite it to your Discord server and configure it to your project's Flock.io workspace.
 
 ### **Customizing Your Experience**
 
@@ -62,4 +62,4 @@ The bot's AI model is trained on a dataset of project management best practices 
 **Conclusion**
 ----------
 
-The Scroll Dev AI Bot is a game-changer for developers, providing a powerful tool for collaboration, productivity, and project management. With its real-time updates, intelligent insights, and customizable notifications, this bot is sure to revolutionize the way developers work together.
+The Sui Dev AI Bot is a game-changer for developers, providing a powerful tool for collaboration, productivity, and project management. With its real-time updates, intelligent insights, and customizable notifications, this bot is sure to revolutionize the way developers work together.

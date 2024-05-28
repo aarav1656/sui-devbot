@@ -1,8 +1,8 @@
 import axios from "axios";
 import dotenv from "dotenv";
 
-// Load environment variables from .env file
-dotenv.config({ path: "./.env" }); // Make sure the path is correct
+
+dotenv.config({ path: "./.env" });
 
 export async function main(prompt) {
   console.log("Prompt:", prompt);
@@ -23,7 +23,7 @@ export async function main(prompt) {
     }
 
     const headers = {
-      "x-api-key": process.env.FLOCK_API_KEY, // Ensure API key is set in .env
+      "x-api-key": process.env.FLOCK_API_KEY,
     };
 
     // Send POST request using axios

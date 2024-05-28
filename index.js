@@ -19,8 +19,8 @@ client.on("ready", () => {
 
 const commands = [
   new SlashCommandBuilder()
-    .setName("scrolldevbot")
-    .setDescription("Chat with the Scroll Dev bot")
+    .setName("suidevaibot")
+    .setDescription("Chat with the SUI Dev bot")
     .addStringOption((option) =>
       option
         .setName("prompt")
