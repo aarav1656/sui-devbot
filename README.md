@@ -1,11 +1,13 @@
 **SUI-RAG-discord-bot**
 =====================
+<img src="./mascot.png" alt="mascot" />
 
 **Introduction**
 ---------------
 
 The Sui Dev AI Bot is a revolutionary project that combines the power of Flock.io and Discord to create a seamless and efficient collaboration experience for developers. This bot is designed to assist developers in their workflow, providing real-time updates and insights to help them stay on top of their projects.
 
+<img src="./architecturefordevbot.png" alt="architecture" />
 **Features**
 ------------
 
