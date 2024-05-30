@@ -9,6 +9,8 @@ The Sui Dev AI Discord Bot is a revolutionary project that combines the power of
 
 <img src="./architecturefordevbot.png" alt="architecture" />
 
+![image](https://github.com/aarav1656/sui-devbot/assets/110886757/b3f64a66-55ee-4381-8e47-60fc65757e2e)
+
 **Features**
 ------------
 
