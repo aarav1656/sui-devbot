@@ -1,4 +1,4 @@
-**SUI-RAG-discord-bot**
+**SUI-RAG-Dev-Discord-bot**
 =====================
 <img src="./mascot.png" alt="mascot" />
 
@@ -8,6 +8,7 @@
 The Sui Dev AI Bot is a revolutionary project that combines the power of Flock.io and Discord to create a seamless and efficient collaboration experience for developers. This bot is designed to assist developers in their workflow, providing real-time updates and insights to help them stay on top of their projects.
 
 <img src="./architecturefordevbot.png" alt="architecture" />
+
 **Features**
 ------------
 
@@ -27,7 +28,8 @@ Developers can customize their notifications to receive updates on specific proj
 
 ### **Flock.io Integration**
 
-The bot is built on top of Flock.io, a powerful platform for team collaboration and project management. This integration enables seamless communication and coordination between team members.
+The bot is built on top of Flock.io, which decentralises training and value alignment. 
+Ensuring that AI objectives match the public’s ethics and societal aims, that decision-making falls to communities, and that usefulness is a top priority.
 
 ## What is Retrieval Augmented Generation
 RAG enhances the existing potent functionalities of LLMs for particular domains or an organization's internal knowledge repository, 

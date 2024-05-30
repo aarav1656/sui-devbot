@@ -1,4 +1,3 @@
-import dotenv from "dotenv/config";
 import { main } from "./bot-api.js";
 import {
   Client,
@@ -16,10 +15,9 @@ client.on("ready", () => {
   console.log(`${client.user.tag} has logged in.`);
 });
 
-
 const commands = [
   new SlashCommandBuilder()
-    .setName("suidevaibot")
+    .setName("suidevbot")
     .setDescription("Chat with the SUI Dev bot")
     .addStringOption((option) =>
       option
@@ -54,40 +52,54 @@ const rest = new REST().setToken(process.env.DISCORD_TOKEN);
 client.on("interactionCreate", async (interaction) => {
   if (!interaction.isChatInputCommand()) return;
 
-  if (interaction.commandName === "chatbot") {
-    // Reply with a non-ephemeral message
+  if (interaction.commandName === "suidevbot") {
+    // Reply with a non-ephemeral message to create the thread
     const message = await interaction.reply({
       content: "Preparing your personal thread...",
       fetchReply: true,
-      ephemeral: false, // This message needs to be non-ephemeral to start a thread
+      ephemeral: false,
     });
 
     // Get the prompt from the user
     const prompt = interaction.options.getString("prompt");
     const user = interaction.user;
-    console.log(user);
 
     // Starting a thread from the bot's message
     const thread = await message.startThread({
-      name: prompt,
+      name: `Thread for: ${prompt}`,
       autoArchiveDuration: 60,
-      type: ChannelType.PrivateThread,
-      reason: "Needed a separate thread for food",
+      type: ChannelType.PrivateThread, // Use PublicThread if you want the thread to be public
+      reason: "Separate thread for bot interaction",
     });
 
-    // Send a message to the thread
-    // thread.send(`Hello, ${user.globalName}`);
+    // Send an initial message to the thread
+    await thread.send(`Hello, ${user.username}! Let's discuss: ${prompt}`);
 
-    // Send a message to the thread using the bot
+    // Get the response from the main function
     const response = await main(prompt);
-    thread.send(response.answer);
 
-    // Optionally, you can inform the user that the thread has been created with an ephemeral follow-up message
+    // Send the bot's response to the thread
+    await thread.send(response?.answer);
+
+    // Inform the user that the thread has been created with an ephemeral follow-up message
     await interaction.followUp({
-      content: `Your personal thread ${prompt} is ready!`,
+      content: `Your personal thread "${prompt}" is ready!`,
       ephemeral: true,
     });
   }
+});
+
+// Event listener for messages in threads
+client.on("messageCreate", async (message) => {
+  // Ignore messages from bots and non-thread channels
+  console.log(message.channel.isThread(),"message created");
+  if (message.author.bot || !message.channel.isThread()) return;
+
+  // Process the message in the thread
+  const response = await main(message.content);
+
+  // Send the response in the thread
+  await message.channel.send(response?.answer);
 });
 
 client.login(process.env.DISCORD_TOKEN);
