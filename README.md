@@ -26,7 +26,7 @@ The bot is fully integrated with Discord, allowing developers to access its feat
 
 Developers can customize their notifications to receive updates on specific project milestones, ensuring they stay informed without being overwhelmed by unnecessary information.
 
-### **Flock.io Integration**
+### **Flock.io Integration >>> Whole SUI Dev community participation Guranteed**
 
 The bot is built on top of Flock.io, which decentralises training and value alignment. 
 Ensuring that AI objectives match the public’s ethics and societal aims, that decision-making falls to communities, and that usefulness is a top priority.
