@@ -5,7 +5,7 @@
 **Introduction**
 ---------------
 
-The Sui Dev AI Bot is a revolutionary project that combines the power of Flock.io and Discord to create a seamless and efficient collaboration experience for developers. This bot is designed to assist developers in their workflow, providing real-time updates and insights to help them stay on top of their projects.
+The Sui Dev AI Discord Bot is a revolutionary project that combines the power of AI and Retrieval Augmented Generation to create a seamless and efficient developer friendly experience for developers building on SUI. This bot is designed to assist developers in their workflow, providing fixes to their common problems , real-time updates to the new packages published and insights to help them stay on top of their projects.
 
 <img src="./architecturefordevbot.png" alt="architecture" />
 
